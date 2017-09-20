@@ -15,6 +15,8 @@ def main():
     reloj1 = pygame.time.Clock()
     blanco = (255, 255, 255)
     fondo = pygame.image.load("personajes2.jpg")
+    miFuente = pygame.font.SysFont('Algerian', 45)
+    miTexto=miFuente.render("CATALOGO DE PERSONAJES",0,(5,4,4))
     
     
     while salir != True:  # Loop Principal
@@ -25,8 +27,7 @@ def main():
         reloj1.tick(20)
         pantalla.fill(blanco)
         pantalla.blit(fondo, (0, 0))  # imagen de fondo
-     
-
+        pantalla.blit(miTexto,(5,5))
         pygame.display.update()
     
     pygame.quit()
