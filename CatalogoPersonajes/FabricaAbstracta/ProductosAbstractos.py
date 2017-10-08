@@ -16,9 +16,9 @@ class EquiparElfo(Equipamiento):
     def equipar(self, partes):
         print("Elfo tiene ",partes.action())
         
-class EquiparHumano(Equipamiento):
+class EquiparMago(Equipamiento):
     def equipar(self, partes):
-        print("Humano tiene ",partes.action())
+        print("Mago tiene ",partes.action())
         
 class EscudoO:
     def action(self):
