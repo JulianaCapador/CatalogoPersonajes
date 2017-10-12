@@ -31,12 +31,17 @@ class Mago(Shape):
     
     
 # Generate shape name strings:
-    
-obj1 = Shape.factory("Orco")
-obj2 = Shape.factory("Elfo")
-obj3 = Shape.factory("Mago")
-    
-obj1.draw()
-obj2.draw()
-obj3.draw()
+opcion = input("Cual desea crear:  \n 1. Orco 2. Elfo 3. Mago \n")
+if (opcion == "1"):  
+    obj1 = Shape.factory("Orco")
+    obj1.draw()
+elif(opcion == "2"):
+    obj2 = Shape.factory("Elfo")
+    obj2.draw()
+else:
+    obj3 = Shape.factory("Mago")
+    obj3.draw()
+
+
+
 
