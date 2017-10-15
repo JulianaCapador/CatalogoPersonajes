@@ -96,7 +96,7 @@ class FabricaMago(FabricaAbstracta):
     def getHabilidad(self):
         return HabilidadElfo("Lanzar llamas")
 
-opcion = input(" 1 orcos - 2 elfos - 3 Magos\n")
+opcion = raw_input(" 1 orcos - 2 elfos - 3 Magos\n")
 
 if opcion == "1":
     fabrica = FabricaOrco()

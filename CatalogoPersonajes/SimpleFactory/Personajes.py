@@ -28,7 +28,7 @@ class Mago(Shape):
     def draw(self): print("Mago creado")
     
     
-opcion = input("Cual desea crear:  \n 1. Orco 2. Elfo 3. Mago \n")
+opcion = raw_input("Cual desea crear:  \n 1. Orco 2. Elfo 3. Mago \n")
 if (opcion == "1"):  
     obj1 = Shape.factory("Orco")
     obj1.draw()
