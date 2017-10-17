@@ -1,5 +1,5 @@
 '''
-Created on 20/09/2017
+Created on 16/10/2017
 
 @author: juliana
 '''
@@ -12,8 +12,8 @@ def main():
     pygame.display.set_caption("Catalogo de Personajes")    
     salir = False
     reloj1=pygame.time.Clock()
-    blanco = (255,255,255)
-    imagen = pygame.image.load("elfo.png")
+
+    imagen = pygame.image.load("orco.png")
     (x,y)=(50,50)
     
     while salir != True: #Loop Principal
@@ -22,8 +22,6 @@ def main():
                 salir = True
                 
         reloj1.tick(20)
-        #(x,y)= pygame.mouse.get_pos()
-        pantalla.fill(blanco)
         pantalla.blit(imagen,(x,y))
         pygame.display.update()
     

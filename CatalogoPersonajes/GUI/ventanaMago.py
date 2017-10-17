@@ -1,5 +1,5 @@
 '''
-Created on 20/09/2017
+Created on 16/10/2017
 
 @author: juliana
 '''
@@ -8,24 +8,28 @@ import pygame
 
 def main():
     pygame.init() #inicializacion de todos los modulos
-    pantalla = pygame.display.set_mode([640,640]) #fijacion del tamano de la ventana
+    pantalla = pygame.display.set_mode([700,700]) #fijacion del tamano de la ventana
     pygame.display.set_caption("Catalogo de Personajes")    
     salir = False
     reloj1=pygame.time.Clock()
-    blanco = (255,255,255)
-    imagen = pygame.image.load("elfo.png")
-    (x,y)=(50,50)
-    
+
+    mago = pygame.image.load("mago.png")
+    cetro = pygame.image.load("cetroMago.png")
+    habil = pygame.image.load("habilidadMago.png")
+    escudoM = pygame.image.load("escudoMago.png")
+
     while salir != True: #Loop Principal
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 salir = True
                 
         reloj1.tick(20)
-        #(x,y)= pygame.mouse.get_pos()
-        pantalla.fill(blanco)
-        pantalla.blit(imagen,(x,y))
+        pantalla.blit(mago,(50,20))
+        pantalla.blit(cetro,(170,20))
+        pantalla.blit(habil,(300,20))
+        pantalla.blit(escudoM,(500,20))
         pygame.display.update()
     
     pygame.quit()
+    
 main()

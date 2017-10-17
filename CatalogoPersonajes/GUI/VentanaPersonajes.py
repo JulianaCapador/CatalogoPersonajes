@@ -13,11 +13,14 @@ def main():
     pygame.display.set_caption("Catalogo de Personajes")    
     salir = False
     reloj1 = pygame.time.Clock()
-    blanco = (255, 255, 255)
+    imagen = pygame.image.load("cetroMago.png")
+    (x,y)=(50,50)
+    #blanco = (255, 255, 255)
     fondo = pygame.image.load("personajes2.jpg")
     miFuente = pygame.font.SysFont('Algerian', 45)
     miTexto=miFuente.render("CATALOGO DE PERSONAJES",0,(5,4,4))
     
+   
     
     while salir != True:  # Loop Principal
         for event in pygame.event.get():
@@ -25,10 +28,11 @@ def main():
                 salir = True
                 
         reloj1.tick(20)
-        pantalla.fill(blanco)
+        #pantalla.fill(blanco)
         pantalla.blit(fondo, (0, 0))  # imagen de fondo
         pantalla.blit(miTexto,(5,5))
         pygame.display.update()
+        pantalla.blit(imagen,(x,y))
     
     pygame.quit()
 main()
