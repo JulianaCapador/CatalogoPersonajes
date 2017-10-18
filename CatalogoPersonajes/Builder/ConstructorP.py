@@ -27,13 +27,13 @@ class Builder:
     
     def Create(self):
         raise NotImplementedError("Create()must defined in subclass")
-    def BulidPArtA(self):
+    def BulidPartA(self):
         raise NotImplementedError("BuildPartA()must defined in subclass")
-    def BulidPArtB(self):
+    def BulidPartB(self):
         raise NotImplementedError("BuildPartB()must defined in subclass")
-    def BulidPArtC(self):
+    def BulidPartC(self):
         raise NotImplementedError("BuildPartC()must defined in subclass")
-    def BulidPArtD(self):
+    def BulidPartD(self):
         raise NotImplementedError("BuildPartD()must defined in subclass")
     
 class ConcreteBuilder1 (Builder):

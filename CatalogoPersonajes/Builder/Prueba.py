@@ -24,7 +24,27 @@ class Director:
         
         elif name == "Mago":
             self.builder.Create()
-            self.builder.BuildPartC()
-            self.builder.BuildPartD()
+            self.builder.BuildPartE()
+            self.builder.BuildPartF()
+            
+class Builder:
+    
+    def Create(self):
+        raise NotImplementedError("Create()must defined in subclass")
+    def BulidPartA(self):
+        raise NotImplementedError("BuildPartA()must defined in subclass")
+    def BulidPartB(self):
+        raise NotImplementedError("BuildPartB()must defined in subclass")
+    def BulidPartC(self):
+        raise NotImplementedError("BuildPartC()must defined in subclass")
+    def BulidPartD(self):
+        raise NotImplementedError("BuildPartD()must defined in subclass")
+    def BuildPartE(self):
+        raise NotImplementedError("BuildPartD()must defined in subclass")
+    def BuildPartF(self):
+        raise NotImplementedError("BuildPartD()must defined in subclass")
+
+
+    
         
             
